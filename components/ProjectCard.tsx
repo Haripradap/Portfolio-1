@@ -22,9 +22,9 @@ const ProjectCard = ({ image, title, text }: Props) => {
   return (
     <div onClick={handleFlip} className="w-[450px] h-[280px] rounded-md cursor-pointer">
       {/* Explicitly type motion.div */}
-      <div className ="flip-card-inner w-full h-full">
+      
       <motion.div
-         
+       className ="flip-card-inner w-full h-full"  
          initial={false}
          animate={{ rotateY: isFlipped ? 180 : 0 }} 
          transition={{ duration: 0.6 }}
@@ -52,7 +52,7 @@ const ProjectCard = ({ image, title, text }: Props) => {
          </div>
        </motion.div>
 
-      </div>
+      
      
     </div>
   );
